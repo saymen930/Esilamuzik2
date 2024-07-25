@@ -36,7 +36,7 @@ def get_duration(playing):
 
 
 @app.on_message(
-    filters.command(["queue", "cqueue", "player", "cplayer", "playing", "cplaying"])
+    filters.command(["queue", "sira", "cqueue", "player", "cplayer", "playing", "cplaying"])
     & filters.group
     & ~BANNED_USERS
 )
@@ -165,17 +165,17 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     for x in got:
         j += 1
         if j == 1:
-            msg += f'Streaming :\n\n✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'Yayın Akışı :\n\n♦️ Başlık  : {x["title"]}\nSüre : {x["dur"]}\nTalep Eden : {x["by"]}\n\n'
         elif j == 2:
-            msg += f'Queued :\n\n✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'Sıraya alındı :\n\n♦️ Başlık : {x["title"]}\nSüre : {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
         else:
-            msg += f'✨ Title : {x["title"]}\nDuration : {x["dur"]}\nBy : {x["by"]}\n\n'
+            msg += f'♦️ Başlık : {x["title"]}\nSüre : {x["dur"]}\nTalep Eden: {x["by"]}\n\n'
     if "Queued" in msg:
         if len(msg) < 700:
             await asyncio.sleep(1)
             return await CallbackQuery.edit_message_text(msg, reply_markup=buttons)
-        if "✨" in msg:
-            msg = msg.replace("✨", "")
+        if "♦️" in msg:
+            msg = msg.replace("♦️", "")
         link = await AnonyBin(msg)
         med = InputMediaPhoto(media=link, caption=_["queue_3"].format(link))
         await CallbackQuery.edit_message_media(media=med, reply_markup=buttons)
