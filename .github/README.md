@@ -1,9 +1,9 @@
 <h2 align="center">
-    ──「 𝙠𝙪𝙢𝙨𝙖𝙡ダ 𝙢𝙪𝙨𝙞𝙘 」──
+    ──「 MYT GRUP BOT 」──
 </h2>
 
 <p align="center">
-  <img src="https://graph.org/file/e53c0c8694e3ddbccdc9d.jpg">
+  <img src="https://telegra.ph/file/321decfc24b08c837626c.jpg">
 </p>
 
 
@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-<a href="https://t.me/kumsaldestekkanal"><img src="https://img.shields.io/badge/-destek%20kanal-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/Meyitzade"><img src="(https://telegra.ph/file/321decfc24b08c837626c.jpg)"></a>
 </p>
 
 Bu bot hizmet amaçlı yapılmıştir
