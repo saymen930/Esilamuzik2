@@ -78,22 +78,22 @@ async def bot_stats(client, CallbackQuery, _):
     if CallbackQuery.from_user.id not in SUDOERS:
         return await CallbackQuery.answer(_["gstats_4"], show_alert=True)
     upl = back_stats_buttons(_)
-    try:
+    try: 
         await CallbackQuery.answer()
     except:
         pass
     await CallbackQuery.edit_message_text(_["gstats_1"].format(app.mention))
     p_core = psutil.cpu_count(logical=False)
     t_core = psutil.cpu_count(logical=True)
-    ram = str(round(psutil.virtual_memory().total / (1024.0**3))) + " ɢʙ"
+    ram = str(round(psutil.virtual_memory().total / (1024.0**3))) + " GB"
     try:
         cpu_freq = psutil.cpu_freq().current
         if cpu_freq >= 1000:
-            cpu_freq = f"{round(cpu_freq / 1000, 2)}ɢʜᴢ"
+            cpu_freq = f"{round(cpu_freq / 1000, 2)}GHZ"
         else:
-            cpu_freq = f"{round(cpu_freq, 2)}ᴍʜᴢ"
+            cpu_freq = f"{round(cpu_freq, 2)}MHZ"
     except:
-        cpu_freq = "ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ"
+        cpu_freq = "Getirilemedi"
     hdd = psutil.disk_usage("/")
     total = hdd.total / (1024.0**3)
     used = hdd.used / (1024.0**3)
