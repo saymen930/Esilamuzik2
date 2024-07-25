@@ -7,25 +7,25 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", 3939406))
+API_HASH = getenv("API_HASH", "e11d0eaec136b1047974ab098041e9f2")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6904551522:AAEZWqdxJw3Fs0BjaVVTIp94Ot6kqdkgB1s")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mongoguess:guessmongo@cluster0.zcwklzz.mongodb.net/?retryWrites=true&w=majority")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 360))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 960))
 
 SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "5400")
 )
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002244663689))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6532412571))
+OWNER_ID = int(getenv("OWNER_ID", 6510559004))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -35,19 +35,26 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/mamakli06/mamaklimusic1",
+    "https://github.com/Meyit47zade/MYTGRUPBOT",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.mamaklibirininruhu")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/mamaklimekani")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/MytDuyuru")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DelularSohbet")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
+# Time after which you're assistant account will leave chats automatically.
+
+AUTO_LEAVE_ASSISTANT_TIME = int(
+
+    getenv("ASSISTANT_LEAVE_TIME", "3400")
+
+)  # Remember to give value in Seconds
 
 # Get this credentials from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
@@ -65,7 +72,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 3221225472))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BAG2fWUAqKKuPBKwVc4LE-_NexX7Re3Yes_cWXMA7IQNdfDuWMIpSjH7KC8EtfFwPpRiUvtc2YFALQkkSw73Q5xbdHAFvt_-ACJz-Jz9rUk_3AIEeLr5w4xx5k8nqGbR6uMYsYZMpuXcIEtveGf3WKXQ0cb91VZ1aXghef6mggPHRQB_Rale1IdOCevUivqnTRVi1VKQyzqFaqOkY2ja9EUZi-aYH1DKgbT7nFy3jb9NoN8LmrkQD3DhcvJzVyo4bWghG8ErfTBCTx0lwp0tLYUSDe06UPmfnDAkvXO3n6nOFoiAih-DfDLyneMhAVw4QpZjQG39UWCDEOeEceTVhQJMkwzecQAAAAGpqF6bAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -84,21 +91,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/Yeni-11-29"
+    "START_IMG_URL", "https://telegra.ph/file/321decfc24b08c837626c.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/Yeni-11-29"
+    "PING_IMG_URL", "https://telegra.ph/file/321decfc24b08c837626c.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/Eski-11-29"
-STATS_IMG_URL = "https://telegra.ph/Eski-11-29"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/Eski-11-29"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/Eski-11-29"
-STREAM_IMG_URL = "https://telegra.ph/Eski-11-29"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/Eski-11-29"
-YOUTUBE_IMG_URL = "https://telegra.ph/Eski-11-29"
-SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/Eski-11-29"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/Eski-11-29"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/Eski-11-29"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+STREAM_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+SOUNCLOUD_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+YOUTUBE_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/321decfc24b08c837626c.jpg"
 
 
 def time_to_seconds(time):
