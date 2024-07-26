@@ -17,7 +17,7 @@ from AnonXMusic.utils.decorators.language import language
 from AnonXMusic.utils.formatters import alpha_to_int
 from config import adminlist
 
-IS_BROADCASTING = False
+IS_BROADCASTING = True
 
 
 @app.on_message(filters.command("broadcast", "reklam") & SUDOERS)
