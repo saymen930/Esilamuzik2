@@ -25,7 +25,7 @@ SONG_DOWNLOAD_DURATION = int(
 LOGGER_ID = int(getenv("LOGGER_ID", -1002244663689))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6510559004))
+OWNER_ID = int(getenv("OWNER_ID", 7242000752))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
