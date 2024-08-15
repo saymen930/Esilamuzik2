@@ -35,6 +35,13 @@ auth_6: "» Kimliği doğrulanmış kullanıcıların listesi alınıyor..."
 auth_7: "» {0}:\n\n kimliğinin doğrulanmış kullanıcıları listesinde..."
 auth_8: "<b>↬Ekleyen :</b>"
 
+reload_1 : "» Yönetici önbelleğini yalnızca 3 dakikada bir yenileyebilirsiniz.\n\nLütfen {0} sonra deneyin."
+reload_2 : "» Yönetici önbelleği başarıyla yenilendi."
+reload_3 : "» Yönetici önbelleğini yeniden kaybetme başarısız oldu, sohbetinizde botun yönetici olduğundan emin olun."
+reload_4 : "» Lütfen bekleyin... \n\nSohbetiniz için {0} yeniden başlatılıyor.."
+reload_5 : "» Sohbetiniz için {0} başarıyla yeniden başlatıldı.\n\nTekrar oynamaya başlayın..."
+
+
 admin_1: "» Yayını yeniden başlattığınızı hatırlıyor musunuz?"
 admin_2: "➻ Yayın durduruldu 🎄\n│ \n└tarafından: {0} 🥀"
 admin_3: "» Yayını ne zaman planladığınızı hatırlıyor musunuz?"
