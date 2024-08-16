@@ -24,7 +24,7 @@ call_4 : "Lütfen bekleyin..\n\n{0} Asistanı sohbetinize davet ediliyor ..."
 call_5 : "{0} Assistant joined successfuly.\n\nTrying to start stream..."
 call_6 : "» Bot başıyor yayın, lütfen parçayı değiştirmek için /atla 'yı kullanın."
 call_7 : "» Sıradaki parça indiriliyor.\n\nLütfen devam edin..."
-call_8 : "<b>Aktif görüntülü sohbet bulunamadı.\n\sizin grup ve tekrar deneyin."
+call_8 : "<b>Aktif görüntülü sohbet bulunamadı.\n\nsizin grup ve tekrar deneyin."
 call_9 : "<b>asistan zaten görüntülü sohbette, lütfen <code> gönderin."
 call_10 : "Telegram sunucu hatası</b>\n\n Telegram'da bazı dahili sorunlar yaşanıyor, lütfen tekrar oynatmayı deneyin veya görüntülü sohbetinizi yeniden başlatın."
 
