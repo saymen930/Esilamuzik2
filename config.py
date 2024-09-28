@@ -54,21 +54,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/e5a809fe337adff6f4d4a.jpg"
+    "START_IMG_URL", "https://envs.sh/SGJ.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/0160271dbe745b3b02366.jpg"
+    "PING_IMG_URL", "https://envs.sh/SGJ.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-STATS_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-STREAM_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/0160271dbe745b3b02366.jpg"
+PLAYLIST_IMG_URL = "https://envs.sh/SGJ.jpg"
+STATS_IMG_URL = "https://envs.sh/SGJ.jpg"
+TELEGRAM_AUDIO_URL = "https://envs.sh/SGJ.jpg"
+TELEGRAM_VIDEO_URL = "https://envs.sh/SGJ.jpg"
+STREAM_IMG_URL = "https://envs.sh/SGJ.jpg"
+SOUNCLOUD_IMG_URL = "https://envs.sh/SGJ.jpg"
+YOUTUBE_IMG_URL = "https://envs.sh/SGJ.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://envs.sh/SGJ.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://envs.sh/SGJ.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/esila-09-28"
 
 
 def time_to_seconds(time):
